@@ -5,22 +5,21 @@ const addEmployeesBtn = document.querySelector('#add-employees-btn');
 const collectEmployees = function() {
   let employeeArray = [];
 
-  // initializing an object to store employee info
-  let employee = {
-    firstName: "Person",
-    lastName: "Person",
-    salary: 0
-  }
-
 // while loop to keep adding employee until user says no
   let user = true;
     while(user){
+      // initializing an object to store employee info
+      let employee = {
+      firstName: "Person",
+      lastName: "Person",
+      salary: 0
+  }
+
       // adding values to the employee object
       employee.firstName = window.prompt("Enter the employee first name.");
       employee.lastName = window.prompt("Enter the employee last name.");
       let usersalary = window.prompt("Enter employee salary.");
 
-      employeeArray.push(employee);
       
       // checking valid numbers for salary and is an integer
       if((usersalary > 1000000000) || (usersalary < 0) || (isNaN(usersalary))){
@@ -30,16 +29,17 @@ const collectEmployees = function() {
         employee.salary = usersalary;
       }
 
+      
+      employeeArray.push(employee);
+
       // Asking user about adding more employees
       user = window.confirm("Do you want to continue adding employees?")
-      console.log(employee);
+     
       
     }
 
-    console.log(employeeArray);
-
-    // displaying the employees
-    return displayEmployees(employeeArray);
+    // returning the employee array
+    return employeeArray;
   
 }
 
