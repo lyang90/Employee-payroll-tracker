@@ -10,11 +10,8 @@ The project can be installed and used in the browser to interact with the employ
 
 ## Usage
 
-The employee tracker is suppose to be used to track an employee's first name, last name, and their salary. 
-
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative file path, add it to your README using the following syntax:
-
-![alt text](assets/images/screenshot.png)
+The employee tracker is suppose to be used to track an employee's first name, last name, and their salary. When the add button is clicked on then a prompt will show up asking for more information of the employee to be filled out.
+![alt text](assets/image.png)
 
 ## Credits
 The starter code was from Xander Rapstine and can be accessed from the link below.
